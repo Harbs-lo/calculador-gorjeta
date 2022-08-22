@@ -1,4 +1,39 @@
-.forms-gorjeta {
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap');
+*{
+  font-family: 'Fira Code', monospace;
+}
+
+.froms-gorjeta {
+  padding-top: 100px;
+}
+
+.forms-gorjeta-value {
   display: flex;
-  justify-content: ;
+  flex-direction: column;
+  font-size: larger;
+}
+
+.forms-gorjeta-value input, select, option{
+  height: 20px;
+  font-size: large;
+}
+
+.forms-gorjeta-value label {
+  font-weight: 500;
+}
+
+select {
+  height: 30px;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: larger;
+  background-color: rgb(73, 230, 164);
 }

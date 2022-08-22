@@ -8,7 +8,7 @@ export default {
         { qualidade: 15, servico: "15% (OK)" },
         { qualidade: 20, servico: "20% (Bom)" },
         { qualidade: 25, servico: "25% (Mais que bom)" },
-        { qualidade: 30, servico: "30% (Exelente)" },
+        { qualidade: 30, servico: "30% (Excelente)" },
       ],
       valor: 0,
       pessoa: 1,
@@ -28,13 +28,13 @@ export default {
 
 <template>
   <main>
-    <div>
+    <div class="froms-gorjeta">
       <h1>Calculadora de Gorjetas</h1>
-      <div class="forms-gorjeta">
+      <div class="forms-gorjeta-value">
         <label for="">Qual o valor da conta?</label>
         <input type="number" v-model="valor" placeholder="0" />
       </div>
-      <div class="forms-gorjeta">
+      <div class="forms-gorjeta-value">
         <label for="select-servico">Como foi o serviço?</label>
         <select
           name="select-qualidade "
@@ -53,13 +53,13 @@ export default {
         </select>
       </div>
 
-      <div class="forms-gorjeta">
-        <label for="">Quantas pessoas iram pagar?</label>
+      <div class="forms-gorjeta-value">
+        <label for="">Quantas pessoas irão pagar?</label>
         <input type="number" v-model="pessoa" placeholder="1" />
       </div>
 
-      <div>
-        <h2>Valor da conta:</h2>
+      <div class="resultado">
+        <h3>Valor da conta:</h3>
         <span>R$ {{ valor_final }} por pessoa</span>
       </div>
     </div>
